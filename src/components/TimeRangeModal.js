@@ -11,11 +11,11 @@ const TimeRangeModel = ({activityPeriods, name, toggleModal}) => {
         return splittedDate; 
     };
 
-    const filterShifts = () => (
+    const filterShiftsByDate = () => (
         activityPeriods.filter((shift) => dateSplit(shift.start_time) === filterDate)
     );
 
-    const activityShifts = filterDate ? filterShifts() : activityPeriods;
+    const activityShifts = filterDate ? filterShiftsByDate() : activityPeriods;
 
     return (
     <ModalPortal>

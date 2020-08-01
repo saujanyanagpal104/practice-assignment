@@ -11,7 +11,7 @@ const App = () => {
     }, []);
 
     const fetchMembers = async () => {
-        const fetchData = await (await fetch(`https://fast-tundra-66711.herokuapp.com/`)).json();
+        const fetchData = await fetch('https://fast-tundra-66711.herokuapp.com/').then((res) => res.json());
         if(fetchData.ok) {
             setMembersData(fetchData.members);
             setIsFetched(true);
