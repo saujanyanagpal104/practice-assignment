@@ -132,4 +132,13 @@ body {
     .modal-window {
         margin: 10px;
     }
+
+    .members-list {
+        overflow-y: auto;
+    }
+
+    .activity-shifts {
+        overflow: auto;
+        max-height: 325px;
+    }
 }
