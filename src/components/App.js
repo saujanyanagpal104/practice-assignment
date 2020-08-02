@@ -25,7 +25,7 @@ const App = () => {
                     <MembersList members={membersData} />
                 </>
             : <>
-                <div className='loading'>LOADING...</div>
+                <div className='load'><div className='loader'></div><span className='loading'>LOADING...</span></div>
             </>}
         </div>
     );
