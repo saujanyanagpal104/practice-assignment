@@ -110,9 +110,14 @@ body {
     color: red;
 }
 
-
-
-
+.loading {
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    position: fixed;
+    top: calc(50% - 22.5px);
+    width: 100%;
+}
 
 @media(max-width: 768px) {
     .container {

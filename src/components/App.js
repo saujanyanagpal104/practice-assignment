@@ -20,11 +20,13 @@ const App = () => {
 
     return (
         <div className='container'>
-            {isFetched &&
+            {isFetched ?
                 <>
                     <MembersList members={membersData} />
                 </>
-            }
+            : <>
+                <div className='loading'>LOADING...</div>
+            </>}
         </div>
     );
 }
